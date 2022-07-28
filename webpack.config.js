@@ -1,13 +1,17 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require("path");
 
 module.exports = {
   entry: ["./example/index.js"],
   devtool: "inline-source-map",
-  output: { filename: "bundle.js", publicPath: "" },
+  output: {
+    filename: "bundle.js",
+    path: path.join(__dirname, "dist"),
+  },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx$/,
         use: [
           {
             loader: "babel-loader",

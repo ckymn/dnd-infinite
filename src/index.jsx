@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-import React from "react";
-
 function Sortable_List(props) {
   const [data, setData] = useState({ data: props.data });
 
@@ -10,6 +8,7 @@ function Sortable_List(props) {
   placeholder.className = "placeholder";
   let dragged;
   let over;
+
   const SortableWrapper = styled.div`
     ul {
       list-style: none;

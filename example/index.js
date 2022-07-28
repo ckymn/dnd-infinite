@@ -1,18 +1,76 @@
-import SortableList from "../lib/sortableList";
-import ReactDOM from "react-dom";
+import SortableList from "../lib/index.js";
+import ReactDOM from "react-dom/client";
 import React, { Component } from "react";
 
 class App extends Component {
   render() {
-    let colors = ["Red", "Green", "Blue", "Yellow", "Black", "White", "Orange"];
+    let colors = [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow",
+      "Black",
+      "White",
+      "Orange",
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow",
+      "Black",
+      "White",
+      "Orange",
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow",
+      "Black",
+      "White",
+      "Orange",
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow",
+      "Black",
+      "White",
+      "Orange",
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow",
+      "Black",
+      "White",
+      "Orange",
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow",
+      "Black",
+      "White",
+      "Orange",
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow",
+      "Black",
+      "White",
+      "Orange",
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow",
+      "Black",
+      "White",
+      "Orange",
+    ];
 
     return (
       <div>
+        Colors Sort
         <SortableList data={colors} />
       </div>
     );
   }
 }
 
-const root = document.getElementById("root");
-ReactDOM.render(<App />, root);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App />);
