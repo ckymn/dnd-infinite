@@ -4,69 +4,11 @@ import React, { Component } from "react";
 
 class App extends Component {
   render() {
-    let colors = [
-      "Red",
-      "Green",
-      "Blue",
-      "Yellow",
-      "Black",
-      "White",
-      "Orange",
-      "Red",
-      "Green",
-      "Blue",
-      "Yellow",
-      "Black",
-      "White",
-      "Orange",
-      "Red",
-      "Green",
-      "Blue",
-      "Yellow",
-      "Black",
-      "White",
-      "Orange",
-      "Red",
-      "Green",
-      "Blue",
-      "Yellow",
-      "Black",
-      "White",
-      "Orange",
-      "Red",
-      "Green",
-      "Blue",
-      "Yellow",
-      "Black",
-      "White",
-      "Orange",
-      "Red",
-      "Green",
-      "Blue",
-      "Yellow",
-      "Black",
-      "White",
-      "Orange",
-      "Red",
-      "Green",
-      "Blue",
-      "Yellow",
-      "Black",
-      "White",
-      "Orange",
-      "Red",
-      "Green",
-      "Blue",
-      "Yellow",
-      "Black",
-      "White",
-      "Orange",
-    ];
+    let items = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6"];
 
     return (
       <div>
-        Colors Sort
-        <SortableList data={colors} />
+        <SortableList data={items} />
       </div>
     );
   }
