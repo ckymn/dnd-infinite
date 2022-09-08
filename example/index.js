@@ -5,10 +5,10 @@ import React, { Component } from "react";
 class App extends Component {
   render() {
     let items = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6"];
-
+    let value = 8;
     return (
       <div>
-        <SortableList data={items} />
+        <SortableList data={items} itemValues={value} />
       </div>
     );
   }
